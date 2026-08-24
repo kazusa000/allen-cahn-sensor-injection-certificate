@@ -3,7 +3,18 @@ name = "allen-cahn-sensor-injection-certificate"
 version = "0.1.0"
 description = "Sensor-count, geometry, and oblique observer-injection stability certificates for Allen-Cahn dynamics."
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+  "numpy>=2.0",
+  "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+design = [
+  "cvxpy>=1.6",
+]
+gpu = [
+  "torch>=2.4",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
