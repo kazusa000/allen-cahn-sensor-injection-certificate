@@ -1,7 +1,10 @@
 # Local and generated content
-/tmp/
-/trash/
-/out/
+/tmp/*
+!/tmp/.gitkeep
+/trash/*
+!/trash/.gitkeep
+/out/*
+!/out/.gitkeep
 
 # Dataset contents; retain documentation and acquisition material
 /data/*
