@@ -1,0 +1,36 @@
+# Local and generated content
+/tmp/
+/trash/
+/out/
+
+# Dataset contents; retain documentation and acquisition material
+/data/*
+!/data/README.md
+!/data/manifest.*
+!/data/scripts/
+!/data/scripts/**
+
+# Local environments and secrets
+.venv/
+.env
+.env.*
+!.env.example
+
+# Generated and system files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
